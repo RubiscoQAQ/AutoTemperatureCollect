@@ -1,7 +1,5 @@
 import random
 import datetime
-
-import eps as eps
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -56,32 +54,22 @@ def persion():
     ActionChains(driver).key_down(Keys.TAB).perform()
     driver.find_element_by_id('alloy-simple-text-editor').click()
     driver.find_element_by_id('alloy-simple-text-editor').send_keys(randomtemp(36.1, 36.6))
-    # 新定位
+    # 正常
     ActionChains(driver).key_down(Keys.TAB).perform()
     driver.find_element_by_id('alloy-simple-text-editor').click()
     driver.find_element_by_id('alloy-simple-text-editor').send_keys("正常")
     ActionChains(driver).key_down(Keys.TAB).perform()
-    # 自动轨迹
+    # 是否在宿舍
     driver.find_element_by_id('alloy-simple-text-editor').click()
     driver.find_element_by_id('alloy-simple-text-editor').send_keys("是")
     pass
 
-
-def nullpersion():
-    ActionChains(driver).key_down(Keys.TAB).perform()
-    ActionChains(driver).key_down(Keys.TAB).perform()
-    ActionChains(driver).key_down(Keys.TAB).perform()
-    ActionChains(driver).key_down(Keys.TAB).perform()
-    changerow()
-    pass
 
 
 def changerow():
     ActionChains(driver).key_down(Keys.ENTER).perform()
     for time in range(0, 4):
         ActionChains(driver).key_down(Keys.LEFT).perform()
-        pass
-    pass
 
 
 # 开始定位

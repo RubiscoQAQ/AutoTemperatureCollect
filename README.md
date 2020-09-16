@@ -6,4 +6,4 @@
 
 将文件的绝对路径写入目录中的path.txt文件中。格式同文件中原值一样。以“\\\”分隔
 
-如有需要请自行修改代码
+如有需要请自行修改代码，本脚本参考代码来自https://github.com/TsumugiWenders/TxtableAutoWrite/
