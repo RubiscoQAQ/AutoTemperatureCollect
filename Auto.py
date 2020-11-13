@@ -80,6 +80,8 @@ def inItDefaultKey():  # 这两个操作是为了保证每次从表格开头进�
     for time in range(0, 35):
         ActionChains(driver).key_down(Keys.LEFT).perform()
 
+def inItDefaultKeyV2():
+    ActionChains(driver).key_down(Keys.CONTROL).send_keys(Keys.HOME).key_up(Keys.CONTROL).perform()
 
 def pointIt():
     driver.minimize_window()
@@ -110,6 +112,6 @@ if mod == 1:
     auto()
 else:
     by_hand()
-inItDefaultKey()
+inItDefaultKeyV2()
 pointIt()
 getNumber()
